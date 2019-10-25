@@ -1,0 +1,67 @@
+.footer {
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  padding:30px 0px;
+}
+
+.footer__text {
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin:20px 0px;
+}
+
+.footer__text-Inc {
+  font-size: 1em;
+  font-weight: bold;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+}
+
+.footer__text-Copyright {
+  font-size: 0.9em;
+  font-family: "Nunito Sans";
+  color: rgb(188, 188, 188);
+}
+
+.footer__menu {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.vertical-link-menu {
+  font-size:0.9em;
+  font-family: "Nunito Sans";
+  color: rgb(188, 188, 188);
+  line-height: 1.6;
+  text-align: left;
+}
+
+.vertical-link-menu a{
+  text-decoration: none;
+  color: rgb(188, 188, 188);
+}
+
+.vertical-link-menu a:hover {
+  text-decoration: underline;
+}
+
+.footer__contact {
+  flex-grow: 0;
+  flex-shrink: 0;
+  font-size:0.9em;
+  font-family: "Nunito Sans";
+  color: rgb(188, 188, 188);
+  line-height: 1.6;
+  text-align: left;
+  margin-top:20px;
+}
+
+@media screen and (max-width: 700px) {
+    .footer div {
+      width:100%;
+      text-align:center;
+      margin-bottom:10px;
+    }
+}

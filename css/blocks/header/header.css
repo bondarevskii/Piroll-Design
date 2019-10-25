@@ -1,0 +1,121 @@
+.header_invisible {
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	height: 75px;
+}
+
+.logo {
+	background-image: url("logo.png");
+	position: absolute;
+	left: 10%;
+	top: 25px;
+	width: 31px;
+	height: 25px;
+}
+
+.header__menu {
+  
+}
+
+.header__menu.menu {
+	font-size: 1em;
+	font-family: "Montserrat";
+	text-transform: uppercase;
+	text-align: left;	
+}
+
+.menu__button {
+    height: 0px;
+    width: 0px;
+    overflow:hidden;
+}
+
+.header__menu .menu__items_invisible {
+  position: absolute;
+  right: 5%;
+  top:calc(37.5px - 0.5em);
+}
+
+.header__menu .menu__item {
+  color: rgb(0, 0, 0);
+  margin: 0px 10px;
+  font-size: 1em;
+  height: 1em;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  transition: color .6s;
+}
+
+.header__menu .menu__item:hover {
+  color: rgb(16, 201, 195);
+}
+
+/* If window.innerWidth was changed when header was visible */
+
+.header_visible {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  height: 75px;
+}
+
+.menu__items_visible {
+  position: absolute;
+  top:calc(37.5px - 0.5em);
+}
+
+/* mobile */
+
+@media screen and (max-width: 700px) {
+
+  .header_visible {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 200px; /*Three Elements*/
+    transition: all .6s;
+  }
+
+  .header_invisible {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 75px;
+    transition: all .6s;
+  }
+
+  .menu__button {
+    position: absolute;
+    font-size: 2em;
+    right: 5%;
+    top: 21.5px;
+    height: 32px;
+    width: 32px;
+  }
+
+  .header__menu .menu__items_visible {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    overflow:hidden;
+    height: 120px; /*Three Elements*/
+    position: absolute;
+    width: 100%;
+    right:auto;
+    top: 75px;
+    transition: all .6s;
+  }
+
+  .header__menu .menu__items_invisible {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    height: 0px;
+    position: absolute;
+    width: 100vw;
+    top: 75px;
+    right: auto;
+    transition: all .6s;
+  }
+}

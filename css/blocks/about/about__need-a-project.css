@@ -1,0 +1,34 @@
+.need-a-project {
+  padding:70px;
+  background-color: rgb(255, 255, 255);
+}
+
+.need-a-project__text {
+  text-align: center;
+}
+
+.need-a-project__title {
+  font-size: 2em;
+  font-family: "Montserrat";
+  color: rgb(29, 29, 29);
+  padding-bottom:20px;
+}
+
+.need-a-project__body {
+  font-size: 1em;
+  font-family: "Nunito Sans";
+  color: rgb(120, 120, 120);
+  line-height: 1.5;
+  padding-bottom:40px;
+}
+
+.need-a-project__button {
+  text-align: center;
+}
+
+.need-a-project__button a {
+  padding:20px;
+  background-color: rgb(16, 201, 195);
+  color:white;
+  font-size: 0.8em; 
+}

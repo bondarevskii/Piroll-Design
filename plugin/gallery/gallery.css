@@ -1,0 +1,99 @@
+.viewForm_invisible {
+	position: fixed;
+	display: none;
+	left: 0px;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+}
+
+.viewForm_visible {
+	position: fixed;
+	display: block;
+	z-index: 10;
+	left: 0px;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+}
+
+.viewForm__bg {
+	position: fixed;
+	left: 0px;
+	z-index: 11;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.viewForm__img {
+    position: fixed;
+    left: 0;
+    z-index: 12;
+    transition: all .6s;
+}
+
+.viewForm__img_center {
+
+}
+
+.viewForm__img_left {
+    left: -100vw;
+}
+
+.viewForm__img_right {
+    left: 100vw;
+}
+
+.viewForm__buttonPrevious {
+	position: fixed;
+	left: 10px;
+	z-index: 13;
+	top: calc(50% - 0.5em);
+	font-size: 3em;
+	color: white;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.viewForm__buttonNext {
+	position: fixed;
+	right: 10px;
+	z-index: 13;
+	top: calc(50% - 0.5em);
+	font-size: 3em;
+	color: white;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.viewForm__buttonExit {
+	position: fixed;
+	right: 10px;
+	top: 10px;
+	z-index: 14;
+	font-size: 3em;
+	color: white;
+	font-weight: bold;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-aspect-ratio: 1/1) {
+	.viewForm__img {
+		height: 100vh;
+		width: 100vh;
+	}
+	
+	.viewForm__img_center {
+		left: calc(50vw - 50vh);
+	}
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+	.viewForm__img {
+		top: calc(50vh - 50vw);
+		height: 100vw;
+		width: 100vw;
+	}
+}

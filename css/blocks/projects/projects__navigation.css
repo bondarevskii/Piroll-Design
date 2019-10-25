@@ -1,0 +1,34 @@
+.navigation {
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	position: relative;
+}
+
+.navigation__button {
+	background-color: rgba(0,0,0,0);
+	font-family: "Montserrat";
+	border: none;
+	color: black;
+	position: absolute;
+	font-size: 1em;
+	top:calc(50% - 0.5em);
+	font-weight: bold;
+}
+
+.navigation__button:hover {
+	text-decoration: underline;
+}
+
+.navigation__button:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+.navigation__previous-button {
+	left:5%;
+}
+
+.navigation__next-button {
+	right:5%;
+}

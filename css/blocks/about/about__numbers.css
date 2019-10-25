@@ -1,0 +1,44 @@
+.numbers {
+  background-color: rgb(16, 201, 195);
+  padding:50px 0px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.numbers__block {
+  position: relative;
+  width: 210px;
+  height:100px;
+}
+
+.numbers__amount {
+  position: absolute;
+  left:60px;
+  top:24px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+.numbers__text {
+  position: absolute;
+  left:60px;
+  top:60px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;  
+  font-size: 0.8em;
+}
+
+.numbers__symbol {
+  position: absolute;
+  left:0px;
+  top:26px;
+  font-size: 3em;
+  font-family: "Pe";
+  color: rgb(255, 255, 255);
+}
